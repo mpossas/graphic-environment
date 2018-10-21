@@ -1,0 +1,15 @@
+canvas {
+  background: black;
+}
+
+input {
+  width: 30px;
+}
+
+#menu {
+  float: right;
+}
+
+div {
+  margin-bottom: 10px;
+}

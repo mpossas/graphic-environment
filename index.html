@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Paint</title>
+	<link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<canvas id="canvas" width="640" height="480"></canvas>
+	<div id="menu">
+		<div>
+			<!--Lista de algoritmos para rasterizacao de primitivas-->
+			<select id="rasterizacao">
+        <optgroup label="Retas">
+          <option value="dda">DDA</option>
+          <option value="bresenham">Bresenham</option>
+        </optgroup>
+        <optgroup label="Circunferências">
+          <option value="bresenham_c">Bresenham</option>
+        </optgroup>
+      </select>
+			<button type="button" onclick="desenhar()">Desenhar</button>
+			<button type="button" onclick="limpar()">Limpar</button>
+		</div>
+		<div>
+			<!--Coordenadas para a translacao e escala-->
+			<input id="x" type="number" placeholder="x">
+			<input id="y" type="number" placeholder="y">
+			<button type="button" onclick="translacao()">Translação</button>
+			<button type="button" onclick="escala()">Escala</button>
+		</div>
+		<div>
+			<!--Angulo de rotacao-->
+			<input id="o" type="number" placeholder="θ">
+			<button type="button" onclick="rotacao()">Rotação</button>
+		</div>
+		<div>
+			<!--Lista de eixos para a reflexao e cisalhamento-->
+			<select id="eixo">
+        <option value="x">x</option>
+        <option value="y">y</option>
+        <option value="x/y">x/y</option>
+      </select>
+			<button type="button" onclick="reflexao()">Reflexão</button>
+			<!--Valor da forca a ser aplicada no cisalhamento-->
+			<input id="f" type="number" placeholder="f">
+			<button type="button" onclick="cisalhamento()">Cisalhamento</button>
+		</div>
+    <div>
+      <!--Lista de algoritmos de recorte-->
+      <select id="recorte">
+        <option value="cohen_sutherland">Cohen-Sutherland</option>
+        <option value="liang_barski">Liang-Barski</option>
+      </select>
+      <button type="button" onclick="recorte()">Recorte</button>
+    </div>
+		<div>
+			<input id="cor" type="color">
+			<!--Lista de algoritmos de preenchimento-->
+			<select id="preenchimento">
+        <option value="boundary">Boundary-Fill</option>
+        <option value="flood">Flood-Fill</option>
+      </select>
+			<button type="button" onclick="preencher()">Colorir</button>
+		</div>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
