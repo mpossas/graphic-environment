@@ -291,7 +291,7 @@ function recorte() {
       alg_liang_barski();
       break;
     default:
-      alert("Selecione um algoritmo de recorte.");  
+      alert("Selecione um algoritmo de recorte.");
   }
 
 }
@@ -492,4 +492,11 @@ function flood(x, y, antiga) {
     flood(x, y + 1, antiga);
     flood(x, y - 1, antiga);
   }
+}
+
+// Retas Parametricas
+
+// Curva de Bezier
+function bezier() {
+  
 }
