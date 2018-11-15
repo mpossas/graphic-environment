@@ -494,9 +494,39 @@ function flood(x, y, antiga) {
   }
 }
 
-// Retas Parametricas
+// Curvas Parametricas
+
+// Curvas Aproximadas
 
 // Curva de Bezier
 function bezier() {
-  
+  // Definicao dos pontos de controle
+  var x1, y1, x2, y2, x3, y3, x4, y4, l;
+
+  l = vertices.length;
+  x1 = vertices[l-8]; y1 = vertices[l-7]; x2 = vertices[l-6]; y2 = vertices[l-5];
+  x3 = vertices[l-4]; y3 = vertices[l-3]; x4 = vertices[l-2]; y4 = vertices[l-1];
+
+  // Calculo dos coeficientes da curva de Bezier
+  var cX, cY, bX, bY, aX, aY, x, y;
+
+  cX = 3 * (x2 - x1);
+  bX = 3 * (x3 - x2) - cX;
+  aX = x4 - x1 - cX - bX;
+
+  cY = 3 * (y2 - y1);
+  bY = 3 * (y3 - y2) - cY;
+  aY = y4 - y1 - cY - bY;
+
+  // Define a quantidade de pontos da curva a serem calculados
+  var accuracy = 0.005;
+
+  // Definicao dos pontos da curva
+  for(var t = 0; t < 1; t += accuracy) {
+    x = (aX * Math.pow(t, 3)) + (bX * Math.pow(t, 2)) + (cX * t) + x1;
+    y = (aY * Math.pow(t, 3)) + (bY * Math.pow(t, 2)) + (cY * t) + y1;
+
+    context.fillRect(x, y, 1, 1);
+  }
+
 }
