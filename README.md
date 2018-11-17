@@ -6,9 +6,9 @@
 
 1) Rasterizacao de primitivas básicas
     1. Retas
-Para desenhar uma reta, selecione dois pontos, os vértices inicial e final da reta, respectivamente, e um dos algoritmos de rasterizacao de retas na aba "Retas", "DDA" ou "Bresenham", e em seguida clique no botão "Desenhar".
+        Para desenhar uma reta, selecione dois pontos, os vértices inicial e final da reta, respectivamente, e um dos algoritmos de rasterizacao de retas na aba "Retas", "DDA" ou "Bresenham", e em seguida clique no botão "Desenhar".
     2. Circunferências
-Para desenhar uma circunferência, selecione dois pontos, o primeiro será o centro da circunferência, e a distância entre o primeiro e o segundo será o raio da circunferência. Selecione na aba "Circunferências" a opção "Bresenham" e em seguida clique no botão "Desenhar".
+        Para desenhar uma circunferência, selecione dois pontos, o primeiro será o centro da circunferência, e a distância entre o primeiro e o segundo será o raio da circunferência. Selecione na aba "Circunferências" a opção "Bresenham" e em seguida clique no botão "Desenhar".
 
 2) Transformações Geométricas
     1. Translação
