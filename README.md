@@ -11,10 +11,10 @@ Clique no canvas para selecionar um ponto.
 ## Rasterização de primitivas básicas
 
 ### Retas
-Selecione os vértices inicial e final da reta, nessa ordem, e um dos algoritmos no seletor "Retas". Em seguida, clique no botão "Desenhar".
+Para desenhar uma reta, selecione os vértices inicial e final, nessa ordem, e um dos algoritmos no seletor "Retas". Em seguida, clique no botão "Desenhar".
 
 ### Circunferências
-Selecione dois pontos: o primeiro será o centro da circunferência, e a distância entre o primeiro e o segundo será o raio da circunferência. Selecione no seletor "Circunferências" a opção "Bresenham" e em seguida clique no botão "Desenhar".
+Para desenhar uma circunferência, selecione dois pontos: o primeiro será o centro da circunferência, e a distância entre o primeiro e o segundo será o raio da circunferência. Selecione no seletor "Circunferências" a opção "Bresenham" e em seguida clique no botão "Desenhar".
 
 ## Transformações Geométricas
 
